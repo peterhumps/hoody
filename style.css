@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:800');
+
+body {
+    margin: 0;
+    padding: 0;
+    /*  Background fallback in case of IE8 & down, or in case video doens't load, such as with slower connections  */
+    background: #333;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* The only rule that matters */
+#video-background {
+    /*  making the video fullscreen  */
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}
+
+/* These just style the content */
+article {
+    /*  just a fancy border  */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 10px solid rgba(255, 255, 255, 0.5);
+    margin: 10px;
+}
+
+h1 {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    font-size: 36px;
+    letter-spacing: 3px;
+    color: #fff;
+    font-family: Oswald, sans-serif;
+    text-align: center;
+}
+
+h1 span {
+    font-family: sans-serif;
+    letter-spacing: 0;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+h1 span a {
+    color: #fff;
+}
+
+.header-teaser {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.bordered-box {
+    background: white;
+    padding: 30px;
+    border: 10px solid #e00713;
+    opacity: 0.9;
+}
+
+.bordered-box img {
+    max-width: 230px;
+}
+
+.bordered-box + .bordered-box {
+    margin-top: 20px;
+}
+
+.bottom-content {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.bottom {
+    margin-top: 100vh;
+    background: white;
+    padding: 0 15px 50px;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.bordered-box-action {
+    background: white;
+    padding: 30px;
+    border: 10px solid #e00713;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.bordered-box-action + .bordered-box-action {
+    margin-top: 30px;
+}
+
+.bordered-box-action .left,
+.bordered-box-action .center,
+.bordered-box-action .right {
+    display: inline-block;
+    float: left;
+}
+
+.bordered-box-action .left {
+    width: 100%;
+    font-size: 40px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.bordered-box-action .center-full {
+    width: 100%;
+}
+
+.bordered-box-action .center,
+.bordered-box-action .right {
+    width: 100%;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.clear {
+    clear: both;
+}
+
+h2 {
+    padding-top: 50px;
+    font-size: 32px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .bordered-box-action .left {
+        width: 20%;
+    }
+    .bordered-box-action .center {
+        width: 40%;
+    }
+    .bordered-box-action .center-full {
+        width: 80%;
+        float: left;
+    }
+    .bordered-box-action .right {
+        width: 40%;
+    }
+}
